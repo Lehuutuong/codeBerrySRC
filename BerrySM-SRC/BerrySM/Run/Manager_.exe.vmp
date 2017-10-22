@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+	<Protection
+		InputFileName="Z:\Working_Cui\Lineage\홈_낙시\AnglerWorking\AnglerSM_NoStateDB140109\Run\Manager_.exe"
+		Options="1536"
+		CheckKernelModeDebugger="true"
+		CompressionMode="0"
+		VMCodeSectionName=".ANG"
+		VMExecutorCount="1"
+		LicenseDataFileName=""
+		OutputFileName=""
+		>
+		<Messages
+		/>
+		<Folders
+		/>
+		<Procedures>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;MakePacket&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedOk&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedAddid&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedRemoveid&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedModifyid&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedBtnClear&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedBtnClear1&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;OnBnClickedUpload&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;CAdminDlg::OnBnClickedBtnAccountsetUpload&quot;"
+			/>
+			<Procedure
+				MapAddress="VMProtectMarker &quot;MakePacketForAutoControl&quot;"
+			/>
+			<Procedure
+				MapAddress="string &quot;anglertop&quot;"
+			/>
+		</Procedures>
+	</Protection>
+	<DLLBox
+	/>
+	<Script
+	/>
+	<LicenseManager
+		ProductCode=""
+		Algorithm=""
+		Bits="0"
+		PublicExp=""
+		PrivateExp=""
+		Modulus=""
+	/>
+</Document>

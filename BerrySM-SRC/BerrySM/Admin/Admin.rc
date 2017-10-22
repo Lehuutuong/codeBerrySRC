@@ -1,0 +1,476 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Admin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Admin.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADMIN_DIALOG DIALOGEX 0, 0, 469, 367
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Berry관리자"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,6,456,284
+    PUSHBUTTON      "계정 추가",IDC_ADDID,12,343,55,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "계정 삭제",IDC_REMOVEID,144,343,55,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "계정 변경",IDC_MODIFYID,78,343,55,14,NOT WS_VISIBLE | WS_DISABLED
+    GROUPBOX        "계정관리",IDC_STATIC,7,296,456,67
+    PUSHBUTTON      "등록키 초기화",IDC_BTN_CLEAR,210,343,55,14,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "시작날짜",IDC_STATIC,21,327,32,8
+    CONTROL         "",IDC_DATETIMEPICKER4,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,59,324,65,12,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "마감날짜",IDC_STATIC,132,328,34,8
+    CONTROL         "",IDC_DATETIMEPICKER5,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,171,325,80,12,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "비번",IDC_STATIC,140,310,16,8
+    LTEXT           "등록키",IDC_STATIC,258,311,25,8
+    EDITTEXT        IDC_ID2,290,309,81,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_PASSWORD2,170,309,80,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACCOUNT2,58,308,65,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "고객ID",IDC_STATIC,24,310,23,8
+    PUSHBUTTON      "일괄 계정 추가",IDC_ADDFROMFILE,342,343,55,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "상태갱신",IDC_BTN_REFRESH,457,161,6,14,NOT WS_VISIBLE
+    PUSHBUTTON      "업로드",IDC_UPLOAD,408,326,55,14,NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDT_ADDRESS,377,309,26,13,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "계정업로드",IDC_BTN_ACCOUNTSET_UPLOAD,276,343,55,14,WS_DISABLED
+    EDITTEXT        IDC_EDT_REFLASHTICK,254,166,33,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    LTEXT           "초마다 자동갱신",IDC_STATIC,293,167,59,8,NOT WS_VISIBLE
+    PUSHBUTTON      "수금조회",IDC_BTN_QUERYHISTORY,178,182,65,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_DATETIMEPICKER_QUERYSTART,"SysDateTimePick32",DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,27,183,59,12,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_DATETIMEPICKER_QUERYEND,"SysDateTimePick32",DTS_RIGHTALIGN | NOT WS_VISIBLE | WS_TABSTOP,105,183,59,12,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    LTEXT           "~",IDC_STATIC,93,185,8,8,NOT WS_VISIBLE
+    GROUPBOX        "상태조회",IDC_STATIC,7,154,418,44,NOT WS_VISIBLE
+    LTEXT           "고객ID",IDC_STATIC,28,167,23,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_SEARCH_ACCOUNT,62,166,65,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    PUSHBUTTON      "검색",IDC_BTN_SEARCHACCOUNT,132,166,67,14,NOT WS_VISIBLE
+    PUSHBUTTON      "오토시작",IDC_BTN_AUTOSTART,179,125,50,14,NOT WS_VISIBLE
+    GROUPBOX        "상태조종",IDC_STATIC,118,82,171,67,NOT WS_VISIBLE
+    PUSHBUTTON      "오토중지",IDC_BTN_AUTOSTOP,126,125,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "오토종료",IDC_BTN_AUTOEND,126,101,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "오토재실행",IDC_BTN_AUTORERUN,179,101,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "게임시작",IDC_BTN_AUTOGAMERUN,232,101,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "접속아이피갱신",IDC_BTN_ACCOUNTREFRESH,318,101,67,14,NOT WS_VISIBLE
+    LTEXT           "멀티갯수",IDC_STATIC,256,327,32,8
+    COMBOBOX        IDC_COMBO2,291,325,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "통계정보",IDC_BTN_STATSTICS,408,343,55,14
+END
+
+IDD_DLG_ADMINUPDATE DIALOGEX 0, 0, 366, 171
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "관리자계정관리"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "변경",IDC_BTN_CHANGE,198,148,44,14
+    PUSHBUTTON      "닫기",IDCANCEL,306,148,44,14
+    CONTROL         "",IDC_LST_ADMIN,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,3,7,358,120
+    PUSHBUTTON      "추가",IDC_BTN_ADD,144,148,44,14
+    PUSHBUTTON      "삭제",IDC_BTN_DEL,252,148,44,14
+    EDITTEXT        IDC_EDT_ID,37,131,64,12,ES_AUTOHSCROLL
+    LTEXT           "아이디",IDC_STATIC,9,133,25,8
+    LTEXT           "비   번",IDC_STATIC,10,151,22,8
+    EDITTEXT        IDC_EDT_PWD,37,149,64,12,ES_AUTOHSCROLL
+    LTEXT           "계정수",IDC_STATIC,160,133,25,8
+    COMBOBOX        IDC_CMB_LEVEL,106,131,49,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,188,131,31,12,ES_AUTOHSCROLL
+    LTEXT           "등록키",IDC_STATIC,227,133,24,8
+    EDITTEXT        IDC_EDT_KEY,257,131,103,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_DLG_UPDATE DIALOGEX 0, 0, 156, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "계정변경"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확  인",IDOK,53,89,35,16
+    PUSHBUTTON      "취  소",IDCANCEL,102,89,35,16
+    LISTBOX         IDC_LIST_ID,15,7,8,108,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER_UPDATEEXP,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,56,34,80,14,WS_EX_TRANSPARENT
+    LTEXT           "마감날짜",IDC_STATIC,19,37,34,8
+    LTEXT           "비   번",IDC_STATIC,24,14,25,8
+    EDITTEXT        IDC_PASSWORD,56,11,80,14,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "등록키 초기화",IDC_CHK_INIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,71,64,13
+    LTEXT           "멀티갯수",IDC_STATIC,18,57,34,8
+    COMBOBOX        IDC_COMBO2,56,54,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLG_LOGIN DIALOGEX 0, 0, 202, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "낚시꾼로그인"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ID,60,8,119,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PW,60,29,119,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "로그인",IDOK2,8,48,50,16
+    PUSHBUTTON      "취소",IDCANCEL,142,48,50,16
+    RTEXT           "관리자    ",IDC_LB_ID,7,11,38,8
+    RTEXT           "비밀번호",IDC_LB_PW,10,29,35,8
+    PUSHBUTTON      "관리자 관리",IDC_MANAGE_ADMIN,66,48,67,16
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 249, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,28,50,14
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,7,7,100,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,142,7,100,15
+    LTEXT           "~",IDC_STATIC,121,9,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ADMIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 463
+        BOTTOMMARGIN, 366
+    END
+
+    IDD_DLG_ADMINUPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DLG_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECKBOXES          BITMAP                  "res\\checkboxes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADMIN_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3033, "\000" 
+    0
+END
+
+IDD_DLG_UPDATE DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO2, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3033, "\000" 
+    0
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Admin.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Admin.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Admin..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Admin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
